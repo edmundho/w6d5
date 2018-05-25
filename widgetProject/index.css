@@ -1,0 +1,33 @@
+
+body {
+  font-family: 'Montez', cursive;
+  background-image: url(warriors2.png);
+  background-size:cover;
+}
+
+.clock {
+  width: 500px;
+  height: 200px;
+  background-color: #0109FE;
+  margin: 0px auto;
+  border: 7px groove #FEE501;
+  border-radius: 5px;
+  color: #FEFE01;
+}
+
+.clock h1 {
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.clock p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clockTitle {
+  margin: 0px auto;
+  width: 500px;
+  text-align: center;
+  font-size: 50px;
+}
