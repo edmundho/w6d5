@@ -17,6 +17,23 @@
   <link rel="stylesheet" href="css/10-posts.css" type="text/css">
   <link rel="stylesheet" href="css/11-icons.css" type="text/css">
   <link rel="stylesheet" href="css/12-modal.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+  $(function(){
+
+    $("body").on("click", ".js-modal-open", function(event){
+      event.preventDefault();
+      $(".modal").addClass("is-open");
+    });
+
+    $("body").on("click", ".js-modal-close", function(event){
+      event.preventDefault();
+      $(".modal").removeClass("is-open");
+    });
+
+  });
+  </script>
 </head>
 <body>
 
@@ -38,6 +55,7 @@
         </li>
         <li><a href="#">Profile</a></li>
         <li><a href="#">Settings</a></li>
+        <li class="js-modal-open"><a href="#">Sign In</a></li>
       </ul>
 
     </nav>
@@ -233,7 +251,17 @@
   </footer>
   <div class="modal">
     <section class="modal-screen"></section>
-    <section class="modal-form input submit">nfgnhhsh</section>
+    <section class="modal-form input submit">
+      <span class="close js-modal-close"><a href="#">&times;</a></span>
+      <h1> Welcome!</h1>
+      <p>Sign in now</p>
+      <br>
+      <br>
+      <input type="text" class="input" name="" value="" placeholder="Username">
+      <input type="text" class="input" name="" value="" placeholder="Password">
+      <p class="submit"><button>Sign In</button> or <a class="js-modal-close" href="#">Cancel</a> </p>
+    </section>
   </div>
 </body>
+
 </html>
