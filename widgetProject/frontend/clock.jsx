@@ -23,13 +23,13 @@ class Clock extends React.Component {
         <div>
         <h1 className='clockTitle'>Clock</h1>
         <div className='clock'>
-        <p><h1>TIME:</h1>
+        <div><h1>TIME:</h1>
         <h1>{hours}:{minutes}:{seconds}PDT</h1>
-        </p>
-        <p>
+        </div>
+        <div>
         <h1>DATE:</h1>
         <h1>{weekday[day]} {months[month]}, {this.state.date.getDate()} 2018</h1>
-        </p>
+        </div>
         </div>
       </div>
     );

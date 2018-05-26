@@ -20,7 +20,7 @@ body {
   padding: 0px 20px;
 }
 
-.clock p {
+.clock div {
     display: flex;
     justify-content: space-between;
 }
@@ -31,3 +31,42 @@ body {
   text-align: center;
   font-size: 50px;
 }
+
+.tab {
+  margin: 0px 7px;
+  list-style: none;
+}
+
+.tab h1 {
+  margin: 0px;
+}
+
+.tabList {
+  display: flex;
+  padding: 0px;
+  margin: 0px auto;
+  justify-content: space-between;
+  border-bottom: 5px groove #FEE501;
+}
+
+.tabList li:first-child{
+  border-right: 5px groove #FEE501;
+  padding-right: 13px;
+}
+
+.tabList li:last-child{
+  border-left: 5px groove #FEE501;
+    padding-left: 13px;
+}
+
+.tabsContainer {
+  justify-content: space-between;
+  height: 300px;
+  width: 250px;
+  border: 7px groove #FEE501;
+    background-color: #0109FE;
+  }
+
+  .tabsContainer article {
+    font-size: 30px;
+  }
